@@ -9,6 +9,16 @@ import { useTonConnect } from "./hooks/useTonConnect";
 import { CHAIN } from "@tonconnect/protocol";
 import "@twa-dev/sdk";
 
+
+// Define a styled header component
+const Header = styled.header`
+  background-color: #333; // Example background color
+  color: #fff; // Example text color
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 24px; // Example font size
+`;
+
 const StyledApp = styled.div`
   background-color: #e8e8e8;
   color: black;
@@ -31,6 +41,8 @@ function App() {
 
   return (
     <StyledApp>
+      {/* Add the Header component above AppContainer */}
+      <Header>MOJTWA</Header>
       <AppContainer>
         <FlexBoxCol>
           <FlexBoxRow>
